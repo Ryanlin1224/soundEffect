@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>BlockChain Sound</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script>
+        var checked = document.querySelector('input[name=button]');
+        var button = document.getElementById('#button');
+
+        function playsound(element,random){
+            var button = element;
+            var button_num = document.querySelector('input[name=' + button.className + ']:checked').value;
+            var random_num = random ? '-' + (Math.floor(Math.random() * 9) + 1) : '';
+            // random_num = button_num == 4 ? '-' + (9 - Math.floor(Math.random() * 3)) : random_num;
+            var audio = new Audio('assets/' + button.className + '_sound' + button_num + random_num + '.mp3');
+            audio.play();
+        }
+        function playsound_key(key) {
+            var button_num = document.querySelector('input[name=plinko]:checked').value;
+            var audio = new Audio('assets/plinko_sound' + button_num + '-' + key + '.mp3');
+            audio.play();
+        }
+    </script>
+</head>
+    <body>
+        <h3>List</h3>
+        <button onclick="location.href='index_crash.html'">Crash</button>
+        <button onclick="location.href='index_hilo.html'">Hilo</button>
+        <button onclick="location.href='index_video_poker.html'">Video Poker</button>
+        <button onclick="location.href='index_bingobingo.html'">Bingo Bingo</button>
+        <button onclick="location.href='index_diamonds.html'">Diamonds</button>
+        <button onclick="location.href='index_plinko.html'">Plinko</button>
+    </body>
+</html>

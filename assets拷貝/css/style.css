@@ -1,0 +1,76 @@
+body {
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+.content > div {
+    width: 50%;
+    float: left;
+}
+
+.bg {
+    max-width: 800px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.w300 {
+    width: 300px;
+}
+
+.form-check-inline {
+    display: inline-block;
+}
+
+.ring {
+    padding: 5px;
+    min-width: 50px;
+    background-color:cadetblue;
+    border-radius: 4px;
+    border-color: azure;
+    color: cornsilk;
+    cursor: pointer;
+}
+
+button {
+    padding: 10px 5px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    min-width: 100px;
+}
+
+.sButton {
+    min-width: 50px;
+}
+
+button ~ input {
+    width: 80px;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 16px;
+}
+
+.home {
+    background: cadetblue;
+    color: #fff;
+    border: 0;
+}   
+
+.note {
+    padding: 5px;
+    background: #ff0000b8;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
